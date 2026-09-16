@@ -51,8 +51,19 @@ body {
 ============================================ */
 
 #header-box {
-    /* YOUR CODE HERE */
-    
+    background-color: #b5d9df;
+    color: #142a43;
+    padding: 20px;
+    text-align: center;
+    border: 3px solid red;
+}
+
+#header-box p {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-style: italic;
+    margin-bottom: 10px;
+    color: grey;
+    text-align: right;
 }
 
 /* ============================================
