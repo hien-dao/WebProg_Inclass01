@@ -40,6 +40,10 @@ body {
 
 #main-container {
     /* YOUR CODE HERE */
+    width: 960px;
+    margin: 20px auto;
+    background: white;
+
     
 }
 
