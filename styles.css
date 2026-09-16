@@ -97,8 +97,9 @@ body {
 ============================================ */
 
 #main-container::after {
-    /* YOUR CODE HERE */
-    
+    content: "";
+    display: table;
+    clear: both;
 }
 
 /* ============================================
