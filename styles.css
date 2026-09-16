@@ -40,11 +40,11 @@ body {
 
 #main-container {
     /* YOUR CODE HERE */
-    width: 960px;
+    max-width: 960px;
     margin: 20px auto;
     background: white;
-
-    
+    border: solid 10px green;
+    padding: 20px;
 }
 
 /* ============================================
@@ -63,7 +63,6 @@ body {
 }
 
 #header-box p {
-    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     font-style: italic;
     margin-bottom: 10px;
     color: grey;
@@ -83,8 +82,9 @@ body {
 }
 
 #content-area {
-    /* YOUR CODE HERE */
-    
+    float: right;
+    width: 75%;
+    padding: 20px;
 }
 
 /* ============================================
