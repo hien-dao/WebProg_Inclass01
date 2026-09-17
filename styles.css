@@ -40,10 +40,10 @@ body {
 
 #main-container {
     /* YOUR CODE HERE */
-    max-width: 960px;
+    max-width: 1000px;
     margin: 20px auto;
     background: white;
-    border: solid 10px green;
+    border: solid 10px #4CAF50;
     padding: 20px;
 }
 
@@ -55,15 +55,21 @@ body {
 ============================================ */
 
 #header-box {
-    background-color: #b5d9df;
-    color: #142a43;
+    background-color: #E0F7FA;
     padding: 20px;
+    border: 3px solid #E74C3C;
+}
+
+#header-box h1 {
+    margin-bottom: 10px;
+    color: #2C3E50;
     text-align: center;
-    border: 3px solid red;
+    font-size: 2.5em;
 }
 
 #header-box p {
     font-style: italic;
+    font-size: 1.2em;
     margin-bottom: 10px;
     color: grey;
     text-align: right;
@@ -78,16 +84,29 @@ body {
 
 #sidebar {
     float: left;
-    width: 25%;
+    width: 20%;
     padding: 20px;
-    background-color: #f0f0f0;
-    
+    background-color: #78909C;
+    color: white;
+    border-radius: 5px;
+    margin-top: 20px;
+}
+
+#sidebar h2 {
+    border-bottom: 3px solid #ccc;
+}
+
+#sidebar li {
+    list-style-type: none;
+    padding: 10px 0;
+    border-bottom: 1px solid #ccc;
 }
 
 #content-area {
     float: right;
-    width: 75%;
-    padding: 20px;
+    width: 80%;
+    padding: 0 0 20px 20px;
+    margin-top: 20px;
 }
 
 /* ============================================
@@ -109,21 +128,29 @@ body {
 ============================================ */
 
 .journal-entry {
-    background-color: #fff;
+    background-color: #E8FBFB;
     margin-bottom: 20px;
     padding: 15px;
-    border: 1px solid #ddd;
+    border: 5px solid #80DEEA;
     border-radius: 5px;
-    
+    overflow:auto
 }
 
 .entry-image {
     float: right;
-    margin-right: 15px;
+    margin: 0 0 15px 15px;
     border: 12px solid #fff;
     box-shadow: 0 0 0 2px #333;
     padding: 8px;
     background: white;
+    width: 30%;
+    height: auto;
+}
+
+.entry-title {
+    color: #00838F;
+    margin-bottom: 10px;
+    border-bottom: 2px solid #80DEEA;
 }
 
 /* ============================================
@@ -133,6 +160,18 @@ body {
 ============================================ */
 
 @media (max-width: 768px) {
-    /* YOUR CODE HERE */
+    #main-container {
+        width: 100%;
+        margin: 0;
+    }
     
+    #sidebar,
+    #content-area {
+        float: none;
+        width: 100%;
+    }
+    
+    #sidebar {
+        margin-bottom: 20px;
+    }
 }
